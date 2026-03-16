@@ -1,98 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Meyer</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <h1>Gustavo Meyer</h1>
 
-        <nav> <!-- Seção de navegação do site. -->
+        <nav>
             <ul>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#projeto">Projetos</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
-            </ul> <!-- Lista não ordenada para links do nosso menu. -->
+            </ul>
         </nav>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <img src="" alt="">
-        <article>
+    <section class="hero">
 
-            <p>
-                Olá, eu sou o Gustavo Meyer, sou um desenvolvedor web... adicionado mais um texto
-            </p>
+        <div class="hero-container">
 
-            <aside>
+            <div class="hero-top">
 
-                <h3>Habilidades</h3>
+                <div class="hero-img">
+                    <img src="IMG/FotoPerfil.jpeg" alt="Gustavo Meyer">
+                </div>
 
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                </ul>
+                <div class="hero-text">
 
-            </aside>
-        </article>
+                    <h2>Desenvolvedor</h2>
+
+                    <p>
+                        Sou desenvolvedor com formação técnica em Desenvolvimento de Software
+                        e grande interesse em criar interfaces modernas, responsivas e funcionais.
+                        Atualmente busco minha primeira oportunidade na área de desenvolvimento
+                        para aplicar meus conhecimentos, evoluir profissionalmente e contribuir
+                        com soluções tecnológicas eficientes.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="social">
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section id="projeto">
 
-        <h2>Projetos</h2>
+    <footer id="contato">
 
-        <article>
-            <h3>Portifólio</h3>
+        <h2 class="section-title">Contato</h2>
 
-            <p>
-                Este foi o primeiro site que desenvolvi utilizando front-end
-            </p>
+        <div class="contato">
+            <p>Email: <a href="mailto:gmeyer475@gmail.com">gmeyer475@gmail.com</a></p>
+            <p>Telefone: <a href="tel:+5547991015644">(47) 99101-5644</a></p>
+        </div>
 
-        </article>
+        <br>
 
-    </section>
-
-    <footer>
-        <p>Direitos reservados a Gustavo Meyer</p>
-
-        <section id="contato">
-
-            <h2>Contato</h2>
-
-            <p>Tem um projeto em mente? Entre em contato.</p>
-
-            <form action="">
-
-                <label for="nome">Nome: </label>
-                <input type="text" id="nome" required><br>
-                <label for="email">E-mail: </label>
-                <input type="email" id="email" name="email" required><br>
-                <label for="telefone">Telefone: </label>
-                <input type="tel" id="telefone" name="telefone" required><br>
-                <label for="assunto">Assunto: </label>
-                <select name="assunto" id="assunto">
-                    <option value="orcamento">Orçamento</option>
-                    <option value="duvida">Dúvida</option>
-                    <option value="outro">Outro</option>
-                </select><br>
-                <label for="mensagem">Mensagem: </label><br>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-                <br>
-                <input type="checkbox" id="inscricao">
-                <label for="inscricao" id="inscricao">Deseja receber minha newsletter? Fique por dentro</label>
-                <br>
-                <input type="submit" value="Enviar mensagem">
-                
-
-            </form>
-
-        </section>
+        <p>© 2026 Gustavo Meyer - Todos os direitos reservados</p>
 
     </footer>
+
 </body>
+
 </html>
